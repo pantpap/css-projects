@@ -1,0 +1,48 @@
+.slogan-container{
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111111;
+}
+
+.slogan{
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300; // this is not working?
+}
+
+.main-text{
+  width: 500px;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.images{
+  margin-top: 30px;
+}
+a {
+  text-decoration: none;
+  border-style: none none solid;
+  color: black;
+}
+
+.images a{
+  border-style: none none solid;
+  border-width: 1px;
+}
+
+.button{
+  margin: 30px 0 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.button:hover{
+  border-style: none;
+}
+
