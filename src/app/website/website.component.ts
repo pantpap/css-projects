@@ -4,6 +4,7 @@ import {BannerComponent} from "./banner/banner.component";
 import {MainSloganComponent} from "./main-slogan/main-slogan.component";
 import {AboutComponent} from "./about/about.component";
 import {WhatWeDoComponent} from "./what-we-do/what-we-do.component";
+import {WhatWeOfferComponent} from "./what-we-offer/what-we-offer.component";
 
 @Component({
   selector: 'app-website',
@@ -13,7 +14,8 @@ import {WhatWeDoComponent} from "./what-we-do/what-we-do.component";
     BannerComponent,
     MainSloganComponent,
     AboutComponent,
-    WhatWeDoComponent
+    WhatWeDoComponent,
+    WhatWeOfferComponent
   ],
   templateUrl: './website.component.html',
   styleUrl: './website.component.scss'
