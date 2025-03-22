@@ -23,4 +23,11 @@ export class DopeHeaderComponent {
     this.isMenuVisible = !this.isMenuVisible;
   }
 
+  showMenu() {
+    this.isMenuVisible = true;
+  }
+
+  hideMenu() {
+    this.isMenuVisible = false;
+  }
 }
