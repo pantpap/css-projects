@@ -17,5 +17,9 @@ export const routes: Routes = [
   {
     path: 'website',
     loadComponent:() => import('./website/website.component').then(c => c.WebsiteComponent)
+  },
+  {
+    path: 'dopetrope',
+    loadComponent:() => import('./dopetrope/dopetrope.component').then(c => c.DopetropeComponent)
   }
 ];
