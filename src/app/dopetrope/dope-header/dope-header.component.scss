@@ -1,0 +1,18 @@
+#header{
+  background: #ffffff;
+  text-align: center;
+}
+
+.header-title{
+  //font: inherit;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -1.4px;
+}
+.sub-menu{
+  display: none;
+}
+.sub-menu.show{
+  display: block;
+}
+

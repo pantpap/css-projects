@@ -1,3 +1,20 @@
-<p>
-  dope-header works!
-</p>
+<header id="header">
+  <h1 class="header-title">Dopetrope</h1>
+  <nav class="nav">
+    <ul>
+      <li><a routerLink="/dopetrope">Home</a></li>
+      <li>
+        <a href="#" (click)="toggleMenu($event)"> Dropdown</a>
+        <ul class="sub-menu" [ngClass]="{'show': isMenuVisible}">
+          <li>Menu 1</li>
+          <li>Menu 2</li>
+          <li>Menu 3</li>
+        </ul>
+      </li>
+      <li><a routerLink="/dopetrope/left-sidebar">Left Side</a></li>
+      <li><a routerLink="/dopetrope/right-sidebar">Right Side</a></li>
+      <li><a routerLink="/dopetrope/no-sidebar">No Sidebar</a></li>
+    </ul>
+  </nav>
+</header>
+<router-outlet/>

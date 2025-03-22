@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import {dropRoutes} from "./dopetrope/drope.routes";
 
 export const routes: Routes = [
   {
@@ -20,6 +21,7 @@ export const routes: Routes = [
   },
   {
     path: 'dopetrope',
-    loadComponent:() => import('./dopetrope/dopetrope.component').then(c => c.DopetropeComponent)
+    loadComponent:() => import('./dopetrope/dopetrope.component').then(c => c.DopetropeComponent),
+    children: dropRoutes
   }
 ];
