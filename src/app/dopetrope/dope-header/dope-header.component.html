@@ -2,29 +2,31 @@
   <h1 class="header-title">Dopetrope</h1>
   <nav id="nav">
     <ul class="menu">
-      <li><a routerLink="/dopetrope">Home</a></li>
-      <li (mouseenter)="showMenu()"
+      <li class="menu-item" routerLinkActive="active"><a routerLink="/dopetrope">Home</a></li>
+      <li class="menu-item" (mouseenter)="showMenu()"
           (mouseleave)="hideMenu()"
           (click)="toggleMenu($event)">
-        <a href="#"> Dropdown</a>
+        <a href="#" routerLinkActive="active"> Dropdown</a>
         <ul class="sub-menu" [ngClass]="{'show': isMenuVisible}">
-          <li>Menu 1</li>
-          <li>Menu 2</li>
-          <li>Menu 3</li>
-          <li>
-            Menu 4
+          <li class="sub-menu-item">Lorem ipsum dolor</li>
+          <li class="sub-menu-item">Magna phasellus</li>
+          <li class="sub-menu-item">Etiam dolore nisl</li>
+          <li class="sub-menu-item has-sub-inner-menu">
+            Phasellus consequat
             <ul class="sub-inner-menu">
-              <li>Menu 1</li>
-              <li>Menu 2</li>
-              <li>Menu 3</li>
+              <li class="sub-inner-menu-item">Magna phasellus</li>
+              <li class="sub-inner-menu-item">Etiam dolore</li>
+              <li class="sub-inner-menu-item">Veroeros feugiat</li>
+              <li class="sub-inner-menu-item">Nisl sed aliquam</li>
+              <li class="sub-inner-menu-item">Dolore adipiscing</li>
             </ul>
           </li>
-          <li>Menu 5</li>
+          <li class="sub-menu-item">Veroeros feugiat</li>
         </ul>
       </li>
-      <li><a routerLink="/dopetrope/left-sidebar">Left Side</a></li>
-      <li><a routerLink="/dopetrope/right-sidebar">Right Side</a></li>
-      <li><a routerLink="/dopetrope/no-sidebar">No Sidebar</a></li>
+      <li class="menu-item"><a routerLink="/dopetrope/left-sidebar" routerLinkActive="active">Left Side</a></li>
+      <li class="menu-item"><a routerLink="/dopetrope/right-sidebar" routerLinkActive="active">Right Side</a></li>
+      <li class="menu-item"><a routerLink="/dopetrope/no-sidebar" routerLinkActive="active">No Sidebar</a></li>
     </ul>
   </nav>
 </header>

@@ -5,7 +5,6 @@
 }
 
 .header-title{
-  //font: inherit;
   font-size: 40px;
   font-weight: 900;
   letter-spacing: -1.4px;
@@ -14,39 +13,73 @@
 
 .menu {
   list-style: none;
+  position: relative;
 }
 
 .menu a{
   text-decoration: none;
+  color: #aaaaaa;
+  margin: 10px 0 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-style: italic;
 }
 
 .menu li {
   display: inline-block;
+  margin: 10px 0 0px 10px;
+  padding: 10px;
+}
+
+.menu-item{
+  position: relative;
+}
+
+.menu-item:active{
+  background: red;
+}
+.menu-item::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Τοποθετεί το buffer ακριβώς κάτω από το στοιχείο */
+  left: 0;
+  width: 100%; /* Το κάνει να καλύπτει όλο το πλάτος */
+  height: 20px; /* Ύψος buffer zone */
+  background: transparent; /* Δεν φαίνεται, αλλά κρατάει ενεργό το hover */
+  pointer-events: auto; /* Επιτρέπει την ανίχνευση του hover */
+}
+
+.menu-item:hover{
+  background: #f3f3f3;
 }
 
 .sub-menu{
-  display: block;
+  display: none; // display: none
   position: absolute;
   background: #252122;
   width: 100px;
   border-radius: 5px;
-  padding: 1.25em 1.5em 1.25em 1.5em;
+  box-sizing: border-box;
+  padding: 1.25em 0 1.25em 1.5em;
   font-style: italic;
   min-width: 13em;
-  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.5);
   text-align: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   list-style: none;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.submenu::before{
+.sub-menu::before{
   content: '';
-  display: block;
   position: absolute;
+  top: -10px;
   left: 50%;
-  margin-left: -10px;
-  top: -9px;
+  transform: translateX(-50%);
   border-left: solid 10px transparent;
   border-right: solid 10px transparent;
   border-bottom: solid 10px #252122;
@@ -59,25 +92,53 @@
   padding: 4px 0 4px 0;
   cursor: pointer;
 }
+
 .sub-menu li:hover{
   color: white;
 }
+
+.sub-inner-menu{
+  display: block; // display: none
+  position: absolute;
+  background: #252122;
+  border-radius: 5px;
+  padding: 20px 0px 20px 10px;
+  box-sizing: border-box;
+  font-style: italic;
+  min-width: 12em;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.5);
+  text-align: left;
+  left: 170px;
+  top: 40px;
+  margin-bottom: 30px;
+  list-style: none;
+  transform: translateY(-30%);
+}
+
 
 .sub-menu.show{
   display: block;
 }
 
-.dropotron {
-  border-radius: 5px;
-  background-color: #252122;
-  background-color: rgba(34, 30, 31, 0.98);
-  padding: 1.25em 1.5em 1.25em 1.5em;
-  font-style: italic;
-  min-width: 13em;
-  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
-  text-align: left;
-  margin-top: -1.25em;
-  margin-left: -1px;
-  list-style: none;
+.has-sub-inner-menu {
+  position: relative;
+  //padding-right: -15px; /* Προσθήκη buffer zone στη δεξιά πλευρά */
+}
+//.has-sub-inner-menu::after {
+//  content: '';
+//  position: absolute;
+//  top: 0;
+//  right: -15px; /* Το ίδιο μέγεθος με το padding */
+//  width: 15px;
+//  height: 100%;
+//  background: transparent; /* Δεν φαίνεται, αλλά κρατάει ενεργό το hover */
+//  pointer-events: auto;
+//}
+
+.has-sub-inner-menu .sub-inner-menu{
+  display: none;
 }
 
+.has-sub-inner-menu:hover .sub-inner-menu{
+  display: block;
+}

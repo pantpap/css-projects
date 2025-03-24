@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {RouterLink, RouterOutlet} from "@angular/router";
+import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import {NgClass} from "@angular/common";
 
 @Component({
@@ -9,7 +9,8 @@ import {NgClass} from "@angular/common";
   imports: [
     RouterLink,
     RouterOutlet,
-    NgClass
+    NgClass,
+    RouterLinkActive
   ],
   standalone: true
 })
