@@ -16,8 +16,12 @@ import {NgClass} from "@angular/common";
 })
 
 export class DopeHeaderComponent {
+  selectedItem: string | null = null;
+  isMenuVisible = false;
 
-  isMenuVisible = false
+  setActiveMenu(item: string) {
+    this.selectedItem = item;
+  }
 
   toggleMenu(event: Event){
     event.preventDefault();

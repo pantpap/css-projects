@@ -10,6 +10,16 @@
   letter-spacing: -1.4px;
 }
 
+.menu-item.active{
+  background: #d32a3f;
+}
+
+.menu-item.active:hover{
+  background: #d32a3f;
+}
+.menu-item.active a{
+  color: #fff;
+}
 
 .menu {
   list-style: none;
@@ -19,26 +29,27 @@
 .menu a{
   text-decoration: none;
   color: #aaaaaa;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0;
   padding: 10px;
-  border-radius: 5px;
   cursor: pointer;
   font-style: italic;
 }
 
 .menu li {
   display: inline-block;
-  margin: 10px 0 0px 10px;
+  margin: 10px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .menu-item{
   position: relative;
 }
 
-.menu-item:active{
-  background: red;
-}
+//.menu-item:active{
+//  background: #d32a3f;
+//}
+
 .menu-item::after {
   content: '';
   position: absolute;

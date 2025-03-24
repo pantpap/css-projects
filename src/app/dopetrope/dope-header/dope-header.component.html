@@ -2,11 +2,11 @@
   <h1 class="header-title">Dopetrope</h1>
   <nav id="nav">
     <ul class="menu">
-      <li class="menu-item" routerLinkActive="active"><a routerLink="/dopetrope">Home</a></li>
+      <li class="menu-item" [ngClass]="{'active' : selectedItem === 'home'}" (click)="setActiveMenu('home')"><a routerLink="/dopetrope">Home</a></li>
       <li class="menu-item" (mouseenter)="showMenu()"
           (mouseleave)="hideMenu()"
           (click)="toggleMenu($event)">
-        <a href="#" routerLinkActive="active"> Dropdown</a>
+        <a href="#"> Dropdown</a>
         <ul class="sub-menu" [ngClass]="{'show': isMenuVisible}">
           <li class="sub-menu-item">Lorem ipsum dolor</li>
           <li class="sub-menu-item">Magna phasellus</li>
@@ -24,9 +24,9 @@
           <li class="sub-menu-item">Veroeros feugiat</li>
         </ul>
       </li>
-      <li class="menu-item"><a routerLink="/dopetrope/left-sidebar" routerLinkActive="active">Left Side</a></li>
-      <li class="menu-item"><a routerLink="/dopetrope/right-sidebar" routerLinkActive="active">Right Side</a></li>
-      <li class="menu-item"><a routerLink="/dopetrope/no-sidebar" routerLinkActive="active">No Sidebar</a></li>
+      <li class="menu-item" [ngClass]="{'active' : selectedItem === 'left-side'}" (click)="setActiveMenu('left-side')"><a routerLink="/dopetrope/left-sidebar">Left Side</a></li>
+      <li class="menu-item" [ngClass]="{'active' : selectedItem === 'right-side'}" (click)="setActiveMenu('right-side')"><a routerLink="/dopetrope/right-sidebar" >Right Side</a></li>
+      <li class="menu-item" [ngClass]="{'active' : selectedItem === 'no-side'}" (click)="setActiveMenu('no-side')"><a routerLink="/dopetrope/no-sidebar">No Sidebar</a></li>
     </ul>
   </nav>
 </header>
