@@ -1,6 +1,8 @@
-# TestProject
+# Css Projects
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+
+The purpose of this project is to remember some css and expand my skills, by create random templates.
 
 ## Development server
 
