@@ -2,6 +2,10 @@ import {Routes} from "@angular/router";
 
 export const dropRoutes: Routes = [
   {
+    path: '',
+    loadComponent:() => import('../dopetrope/dopetrope-home/dopetrope-home.component').then(c => c.DopetropeHomeComponent),
+  },
+  {
     path: 'left-sidebar',
     loadComponent:() => import('../dopetrope/left-sidebar/left-sidebar.component').then(c => c.LeftSidebarComponent),
   },
