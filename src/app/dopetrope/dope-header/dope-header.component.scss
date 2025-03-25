@@ -11,11 +11,11 @@
 }
 
 .menu-item.active{
-  background: #d32a3f;
+  background: var(--main-red);
 }
 
 .menu-item.active:hover{
-  background: #d32a3f;
+  background: var(--main-red);
 }
 .menu-item.active a{
   color: #fff;
