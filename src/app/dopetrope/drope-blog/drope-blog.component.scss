@@ -1,6 +1,5 @@
-.portfolio-container{
-  border-top: 1px solid var(--main-light-gray);
-  padding-top: 70px;
+.blog-container{
+  padding-top: 50px;
   background-color: #f7f7f7;
 }
 header{
@@ -35,44 +34,71 @@ header h2:after{
   margin-right: -50%;
 }
 
-.projects{
+.blogs{
   width: 70%;
   margin: 0 auto;
   display: grid;
   //grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.project{
+.blog{
   background: white;
 }
 
 .image{
+  width: 100%;
   margin-bottom: 50px;
   cursor: pointer;
-  width: 100%;
 }
+
 .description{
   padding: 0 30px;
 }
 
-.description h2{
-  margin-bottom: 28px;
+.title{
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.post-date{
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .description p{
   font-weight: 300;
   color: var(--services-color);
   line-height: 2;
+  margin-top: 28px;
 }
 
-.action{
+.actions{
   padding: 30px;
 }
 
+.btn1{
+  margin-right: 16px;
+  padding: 14px 30px;
+  background: var(--services-action-warning);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn1:hover{
+  background: var(--services-action-warning-hover);
+}
+
 .btn2{
-  padding: 18px 30px;
+  padding: 14px 30px;
   background: var(--services-action-black);
   color: #fff;
   border-radius: 5px;
@@ -85,4 +111,3 @@ header h2:after{
 .btn2:hover{
   background: var(--services-action-black-hover);
 }
-

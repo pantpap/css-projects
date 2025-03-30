@@ -1,0 +1,127 @@
+footer{
+  background: var(--main-dark-gray);
+  color: white;
+  padding: 70px 0;
+}
+
+.first-section-container{
+  display: flex;
+  //margin: 0 130px;
+
+  //justify-content: center;
+  //gap: 50px
+  margin: 0 auto;
+  max-width: 100%;
+  width: 70em;
+}
+
+.title{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.image{
+  width: 100%;
+}
+
+.description{
+  color: var(--footer-text-color);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+.description a{
+  color: var(--footer-link);
+}
+
+.description a:hover{
+  text-decoration: none;
+}
+
+.brand{
+  font-weight: 400;
+  color: #fff;
+}
+
+.left-side{
+  display: inline-block;
+  width: 65%;
+  //background: red;
+  margin-right: 50px
+}
+
+.right-side{
+  display: inline-block;
+  width: 30%;
+}
+
+.news{
+  list-style: none;
+  padding: 0;
+}
+
+.news-row{
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--main-light-gray);
+}
+
+.news-row:last-child {
+  border-bottom: none;
+}
+
+.news-date{
+  display: inline-block;
+  background: var(--main-red);
+  padding: 8px 12px 0 16px;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 30px;
+}
+.news-date strong{
+  display: block;
+  font-size: 28px;
+  font-weight: normal;
+}
+//.news-date::after{
+//  content: '';
+//  position: absolute;
+//  bottom: 0;
+//  right: -1.2em;
+//  border-left: solid 1.25em #d52349;
+//  border-top: solid 1.8em transparent;
+//  border-bottom: solid 1.8em transparent;
+//}
+
+
+.news-details{
+  display: inline-block;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.news-details span{
+  display: block;
+  font-weight: 300;
+  color: var(--footer-link);
+}
+
+.btn1{
+  background: var(--services-action-warning);
+  padding: 10px 24px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn1:hover{
+  background: var(--services-action-warning-hover);
+}
