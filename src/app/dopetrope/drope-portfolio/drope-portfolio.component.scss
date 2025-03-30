@@ -1,0 +1,86 @@
+.portfolio-container{
+  border-top: 1px solid var(--main-light-gray);
+  padding-top: 70px;
+  background-color: #f7f7f7;
+}
+header{
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+header h2{
+  overflow: hidden;
+  text-align: center;
+}
+
+header h2:before,
+header h2:after{
+  content: '';
+  background-color: var(--main-light-gray);
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+header h2:before{
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+header h2:after{
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.projects{
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  //grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project{
+  background: white;
+}
+
+.image{
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.description{
+  padding: 0 30px;
+}
+
+.description h2{
+  margin-bottom: 28px;
+}
+
+.description p{
+  font-weight: 300;
+  color: var(--services-color);
+  line-height: 2;
+}
+
+.action{
+  padding: 30px;
+}
+
+.btn2{
+  padding: 18px 30px;
+  background: var(--services-action-black);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn2:hover{
+  background: var(--services-action-black-hover);
+}
+
