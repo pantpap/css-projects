@@ -1,4 +1,13 @@
-<header id="header">
+<div class="side-menu" [ngStyle]="{display: isSideMenuVisible ? 'block' : 'none'}">
+  <app-dope-side-menu/>
+</div>
+<header id="header" [ngClass]="{'pushed': isSideMenuVisible}">
+  <div class="burger" (click)="toggleSideMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
   <h1 class="header-title">Dopetrope</h1>
   <nav id="nav">
     <ul class="menu">
@@ -30,4 +39,6 @@
     </ul>
   </nav>
 </header>
-<router-outlet/>
+<div class="main-content" [ngClass]="{'pushed': isSideMenuVisible}">
+  <router-outlet/>
+</div>

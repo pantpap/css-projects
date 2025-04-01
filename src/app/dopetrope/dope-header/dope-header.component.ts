@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
-import {NgClass} from "@angular/common";
+import {NgClass, NgStyle} from "@angular/common";
+import {DopeSideMenuComponent} from "../dope-side-menu/dope-side-menu.component";
 
 @Component({
   selector: 'app-dope-header',
@@ -10,7 +11,9 @@ import {NgClass} from "@angular/common";
     RouterLink,
     RouterOutlet,
     NgClass,
-    RouterLinkActive
+    RouterLinkActive,
+    NgStyle,
+    DopeSideMenuComponent
   ],
   standalone: true
 })
@@ -18,6 +21,7 @@ import {NgClass} from "@angular/common";
 export class DopeHeaderComponent {
   selectedItem: string | null = null;
   isMenuVisible = false;
+  isSideMenuVisible = false;
 
   setActiveMenu(item: string) {
     this.selectedItem = item;
@@ -34,5 +38,9 @@ export class DopeHeaderComponent {
 
   hideMenu() {
     this.isMenuVisible = false;
+  }
+
+  toggleSideMenu() {
+    this.isSideMenuVisible = !this.isSideMenuVisible;
   }
 }
