@@ -1,8 +1,6 @@
 .banner-container{
   height: 50vh;
-  background: #CCE8F4 url("../../../assets/images/dope/pic011.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: #CCE8F4 url("../../../assets/images/dope/pic011.jpg") no-repeat center center / auto 100%;
   background-size: auto 100%;
   text-align: center;
   position: relative;
@@ -28,4 +26,48 @@
   font-size: 24px;
   color: var(--main-red);
   font-weight: 300;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  .banner-container{
+    height: 35vh;
+  }
+  .banner{
+    width: 100%;
+    padding: 20px 15px;
+    line-height: 30px;
+    background: var(--banner-bg-color-075);
+  }
+
+  .banner h1 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .banner p {
+    font-size: 17px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
