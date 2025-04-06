@@ -1,20 +1,11 @@
 #header{
   background: #ffffff;
   text-align: center;
-  margin: 80px 0 60px 0;
+  margin: 50px 0 40px 0;
   position: relative;
 }
 
-#header.pushed{
-  //margin-left: 100px;
-}
-
-.main-content.pushed{
-  //margin-left: 100px;
-}
-
 .burger{
-  margin-left: 20px;
   cursor: pointer;
   background: var(--main-light-gray-075);
   width: 50px;
@@ -23,6 +14,13 @@
   box-sizing: border-box;
   border-radius: 5px;
   display: none;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
 }
 
 .line{
@@ -195,53 +193,68 @@
   display: block;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+//@media only screen and (min-width: 320px) and (max-width: 991px) {
+//  //TODO remove nav and display burger menu
+//  #nav{
+//    display: none;
+//  }
+//  #header{
+//    margin: 20px 0 60px 0
+//  }
+//  .burger{
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    gap: 3px;
+//    justify-content: center;
+//  }
+//
+//  .header-title{
+//    font-size: 25px;
+//  }
+//}
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #nav{
+    display: none;
+  }
+  #header{
+    margin: 20px 0 30px 0
+  }
+  .burger{
+    display: flex;
+  }
+  .header-title{
+    font-size: 26px;
+    padding-top: 5px;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (max-width: 992px) {
+@media only screen  and (min-width: 768px) and (max-width: 992px) {
   //TODO remove nav and display burger menu
   #nav{
     display: none;
   }
   #header{
-    margin: 20px 0 60px 0
+    margin: 20px 0 30px 0
   }
   .burger{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px;
-    justify-content: center;
   }
 
-  //.side-menu{
-  //  display: block;
-  //  position: fixed;
-  //  top: 0;
-  //  left: 0;
-  //  height: 100%;
-  //  z-index: 1000;
-  //  background: #171f2c;
-  //  color: #fff
-  //}
+  .header-title{
+    padding-top: 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .side-menu{
     display: none!important;
+  }
+
+  .burger{
+    display: none;
   }
 }
 
