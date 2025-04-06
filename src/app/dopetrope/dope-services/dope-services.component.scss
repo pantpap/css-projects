@@ -1,11 +1,12 @@
 .container{
-  width: 70%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px;
+  width: 100%;
 }
 .service {
   text-align: center;
@@ -135,4 +136,37 @@
 
 .btn2:hover{
   background: var(--services-action-black-hover);
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+
+  .btn1{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .btn2{
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+// screens 992px and smaller
+//@media only screen and (max-width: 992px) {
+//
+//}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
