@@ -4,7 +4,7 @@
   background-color: #f7f7f7;
 }
 header{
-  width: 70%;
+  max-width: 1350px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -36,12 +36,13 @@ header h2:after{
 }
 
 .projects{
-  width: 70%;
+  max-width: 1350px;
   margin: 0 auto;
   display: grid;
+  padding: 0 20px;
   //grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .project{
@@ -57,7 +58,7 @@ header h2:after{
   padding: 0 30px;
 }
 
-.description h2{
+.description h2 {
   margin-bottom: 28px;
 }
 
@@ -80,9 +81,80 @@ header h2:after{
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
+  line-height: 25px;
 }
 
 .btn2:hover{
   background: var(--services-action-black-hover);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header{
+    margin: 0 40px;
+  }
+
+  header h2{
+    font-size: 22px;
+  }
+
+  .portfolio-container{
+    padding-top: 50px;
+  }
+
+  .projects{
+    padding: 0 40px;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn2{
+    width: 100%;
+    font-size: 16px;
+    padding: 11px 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    margin: 0 30px;
+    padding-bottom: 35px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  .image {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-container {
+    padding-top: 30px;
+  }
+
+  .projects {
+    padding: 0 30px;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .description {
+    margin-bottom: 14px;
+  }
+
+  .description p{
+    font-size: 14px;
+  }
+
+  .description h2 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .btn2{
+    width: 100%;
+    font-size: 16px;
+    padding: 11px 24px;
+  }
 }
 
