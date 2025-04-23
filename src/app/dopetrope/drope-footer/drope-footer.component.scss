@@ -162,3 +162,26 @@ footer{
 .list-item a:hover{
   text-decoration: none;
 }
+
+.copyrights-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: red;
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px 35px;
+  border-radius: 4px;
+}
+
+.contact-row{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.label{
+  width: 100px;
+}
