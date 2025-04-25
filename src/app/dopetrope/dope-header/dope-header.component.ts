@@ -1,20 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
-import {NgClass, NgStyle} from "@angular/common";
+import { Component } from '@angular/core';
 import {DopeSideMenuComponent} from "../dope-side-menu/dope-side-menu.component";
+import {NgClass, NgStyle} from "@angular/common";
+import {RouterOutlet} from "@angular/router";
 
 @Component({
     selector: 'app-dope-header',
     templateUrl: './dope-header.component.html',
     styleUrls: ['./dope-header.component.scss'],
-    imports: [
-        RouterLink,
-        RouterOutlet,
-        NgClass,
-        RouterLinkActive,
-        NgStyle,
-        DopeSideMenuComponent
-    ]
+  imports: [
+    DopeSideMenuComponent,
+    NgStyle,
+    NgClass,
+    RouterOutlet
+
+  ]
 })
 
 export class DopeHeaderComponent {
