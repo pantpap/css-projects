@@ -3,7 +3,7 @@
   background-color: #f7f7f7;
 }
 header{
-  width: 70%;
+  width: 70em;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -35,10 +35,9 @@ header h2:after{
 }
 
 .blogs{
-  width: 70%;
+  width: 70em;
   margin: 0 auto;
   display: grid;
-  //grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 50px;
   grid-template-columns: 1fr 1fr;
 }
@@ -88,7 +87,7 @@ header h2:after{
   color: #fff;
   border-radius: 5px;
   border: none;
-  font-size: 20px;
+  font-size: 1.1em;
   font-weight: 700;
   cursor: pointer;
 }
@@ -103,11 +102,50 @@ header h2:after{
   color: #fff;
   border-radius: 5px;
   border: none;
-  font-size: 20px;
+  font-size: 1.1em;
   font-weight: 700;
   cursor: pointer;
 }
 
 .btn2:hover{
   background: var(--services-action-black-hover);
+}
+
+fa-icon{
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1280px){
+  header, .blogs{
+    width: calc(100% - 60px);
+  }
+}
+
+@media only screen and (max-width: 1030px){
+  .btn1, .btn2{
+    width: 100%;
+  }
+  .btn1{
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  header h2{
+    font-size: 22px;
+  }
+
+  .blogs{
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  header h2{
+    font-size: 18px;
+  }
+  .blogs{
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
