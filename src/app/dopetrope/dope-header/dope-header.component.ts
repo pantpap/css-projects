@@ -4,18 +4,17 @@ import {NgClass, NgStyle} from "@angular/common";
 import {DopeSideMenuComponent} from "../dope-side-menu/dope-side-menu.component";
 
 @Component({
-  selector: 'app-dope-header',
-  templateUrl: './dope-header.component.html',
-  styleUrls: ['./dope-header.component.scss'],
-  imports: [
-    RouterLink,
-    RouterOutlet,
-    NgClass,
-    RouterLinkActive,
-    NgStyle,
-    DopeSideMenuComponent
-  ],
-  standalone: true
+    selector: 'app-dope-header',
+    templateUrl: './dope-header.component.html',
+    styleUrls: ['./dope-header.component.scss'],
+    imports: [
+        RouterLink,
+        RouterOutlet,
+        NgClass,
+        RouterLinkActive,
+        NgStyle,
+        DopeSideMenuComponent
+    ]
 })
 
 export class DopeHeaderComponent {

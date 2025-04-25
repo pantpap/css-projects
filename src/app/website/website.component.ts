@@ -7,18 +7,17 @@ import {WhatWeDoComponent} from "./what-we-do/what-we-do.component";
 import {WhatWeOfferComponent} from "./what-we-offer/what-we-offer.component";
 
 @Component({
-  selector: 'app-website',
-  standalone: true,
-  imports: [
-    HeaderComponent,
-    BannerComponent,
-    MainSloganComponent,
-    AboutComponent,
-    WhatWeDoComponent,
-    WhatWeOfferComponent
-  ],
-  templateUrl: './website.component.html',
-  styleUrl: './website.component.scss'
+    selector: 'app-website',
+    imports: [
+        HeaderComponent,
+        BannerComponent,
+        MainSloganComponent,
+        AboutComponent,
+        WhatWeDoComponent,
+        WhatWeOfferComponent
+    ],
+    templateUrl: './website.component.html',
+    styleUrl: './website.component.scss'
 })
 export class WebsiteComponent {
 
