@@ -1,5 +1,5 @@
 <footer>
-  <section>
+  <section class="section-one">
     <div class="first-section-container">
       <div class="left-side">
         <div class="title">Blandit nisl adipiscing</div>
@@ -66,7 +66,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="section-two">
     <div class="second-section-container">
       <div class="left-container">
         <div class="first">
@@ -96,15 +96,18 @@
           </ul>
         </div>
       </div>
-
-
-
       <div class="right-container">
         <div class="third">
           <div class="second-section-title">
             Vitae tempor lorem
           </div>
-          <div class="social">Social media icons</div>
+          <div class="social">
+            <fa-icon class="icon facebook" [icon]="faFacebookF"></fa-icon>
+            <fa-icon class="icon twitter" [icon]="faTwitter"></fa-icon>
+            <fa-icon class="icon dribble" [icon]="faDribbble"></fa-icon>
+            <fa-icon class="icon tumblr" [icon]="faTumblr"></fa-icon>
+            <fa-icon class="icon linked-in" [icon]="faLinkedinIn"></fa-icon>
+          </div>
           <div class="contact-details">
             <div class="contact-row">
               <div class="label">Address</div>
@@ -122,7 +125,7 @@
             <div class="contact-row">
               <div class="label">Mail</div>
               <div class="value">
-                <p>example&#64;gmail.com</p>
+                <p><a href="#"> example&#64;gmail.com</a></p>
               </div>
             </div>
 
@@ -136,12 +139,18 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
+
   <section class="copyrights-container">
     <span class="copyright">&copy; All rights reserved</span>
-    <span class="design-by">Design: me</span>
-    <span class="design-by">Demo Images: Dreametry Doodle</span>
+    <span>
+      Design: <a href="https://html5up.net/" target="_blank"> HTML5 UP</a>
+    </span>
+    <span>
+      Demo Images:
+      <a href="https://www.facebook.com/dreametry.ph#" target="_blank"> Dreametry Doodle</a>
+    </span>
   </section>
+
 </footer>
